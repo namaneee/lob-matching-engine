@@ -8,7 +8,7 @@ int main() {
     OrderBook book;
     std::ifstream file("orders.csv");
     std::string line;
-    std::getline(file, line); // skip header
+    std::getline(file, line); 
     uint64_t id = 0;
 
     auto start = std::chrono::high_resolution_clock::now();
