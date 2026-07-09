@@ -1,4 +1,4 @@
-// orderbook.cpp
+
 #include "orderbook.h"
 #include <iostream>
 
@@ -19,7 +19,7 @@ void OrderBook::match() {
         double bestAskPrice = asks.begin()->first;
         auto& askQueue = asks.begin()->second;
 
-        if (bestBidPrice < bestAskPrice) break; // No match possible
+        if (bestBidPrice < bestAskPrice) break; 
 
         Order& bid = bidQueue.front();
         Order& ask = askQueue.front();
